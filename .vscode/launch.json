@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "go",
+            "request": "launch",
+            "name": "Launch Main Go File",
+            "program": "${workspaceFolder}/${input:mainGoFile}",
+            "cwd": "${workspaceFolder}"
+        }
+    ],
+    "inputs": [
+        {
+            "type": "pickString",
+            "id": "mainGoFile",
+            "description": "Select the main Go file to launch",
+            "options": [
+                "01-arrays-and-strings/main.go",
+                "06-linear-search/main.go"
+            ]
+        }
+    ]
+}
